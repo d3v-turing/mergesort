@@ -5,9 +5,9 @@ def merge_sort(merge):
     right = []
     for i in range (0, len(merge)):
         if i < (len(merge)/2):
-            left += merge[i]
+            left.append(merge[i])
         else:
-            right += merge[i]
+            right.append(merge[i])
     left = merge_sort(left)
     right = merge_sort(right)
     return merge(left, right) 
