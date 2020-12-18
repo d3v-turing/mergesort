@@ -3,11 +3,11 @@ def merge_sort(merge):
         return merge
     left = []
     right = []
-    for x in range (0, len(merge)):
+    for i in range (0, len(merge)):
         if i < (len(merge)/2):
-            left += x
+            left += merge[i]
         else:
-            right += x
+            right += merge[i]
     left = merge_sort(left)
     right = merge_sort(right)
     return merge(left, right) 
